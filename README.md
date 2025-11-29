@@ -72,6 +72,8 @@ finetune/
 
 3. **Run the complete pipeline:**
    ```bash
+   ##Run with uv instead of python
+   uv run train.py
    # Step 1: Generate synthetic data from PDF
    python syntheticdatageneration.py
    

@@ -9,7 +9,13 @@ from pydantic import BaseModel
 from litellm import completion
 from generated_prompt import prompt_template
 import os
-os.environ["GEMINI_API_KEY"] = "AIzaSyCOQvM2-5QX0GnlgOpw2pskG4Ci5KkebDc"
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Set environment variables from .env file
+os.environ["GEMINI_API_KEY"] = os.getenv("GEMINI_API_KEY_SYNTHETIC", "")
 
 # Configure accelerator options for GPU
 accelerator_options = AcceleratorOptions(

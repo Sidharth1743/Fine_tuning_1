@@ -8,15 +8,11 @@ with open('DRL.json','r') as f:
         for pairs in chunk['generated']:
             question,answer = pairs['question'],pairs['answer']
             context_pair = {
-                'question'  : f'Context:{chunk['context']}{pairs['question']}',
+                'question'  : f'{pairs['question']}',
                 'answer' : pairs['answer']
             }
             instructions.append(context_pair)
         print(Fore.YELLOW + str(chunk))
 
-with open('data/instruction.json','w') as f:
+with open('data/instruction_format.json','w') as f:
     json.dump(instructions, f)
-
-with open('data/instruction.json','r') as f:
-    data = json.load(f)
-    print(Fore.GREEN  + str(data[:10]))

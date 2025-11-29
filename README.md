@@ -1,4 +1,4 @@
-# Fine tune experimentation in my laptop - 1 
+# RTX 3050(4GB VRAM) – Fine-Tuning Llama 3.2 Experiment
 
 Fine tuned Llama-3.2-1B with research paper - Deep Reinforcement Learning For Power Frid Multi-Stage Cascading Failure Mitigations. This project transforms academic research papers into an interactive AI assistant through synthetic data generation and supervised fine-tuning.
 

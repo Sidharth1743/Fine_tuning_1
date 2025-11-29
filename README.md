@@ -59,7 +59,7 @@ finetune/
 
 1. **Clone and setup environment:**
    ```bash
-   git clone https://github.com/Sidharth1743/Fine_tuning_1.git
+   git clone https://github.com/Sidharth1743/FT-Llama3.2-1B.git
    cd Fine_tuning_1
    uv sync
    ```
